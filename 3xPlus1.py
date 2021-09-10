@@ -1,28 +1,27 @@
 # from sys import exit
 
-import sys
+def berekening(begingetal):
 
-def berekening():
+    try:
+        if (begingetal % 2) > 0:
+            begingetal = 3 * begingetal + 1
+#            print("Begingetal = ", begingetal)
 
-begingetal = 500
+        elif begingetal == 1:
+            begingetal = begingetal + 1
+#            print("Begingetal = ", begingetal)
 
-try:
-    if (begingetal % 2) > 0:
-        begingetal = 3 * begingetal + 1
-        print("Begingetal = ", begingetal)
+        else:
+            begingetal = int(begingetal / 2)
+#            print("Begingetal = ", begingetal)
 
-    elif begingetal == 1:
-        begingetal = begingetal + 1
-        print("Begingetal = ", begingetal)
+        return (begingetal)
 
-    else:
-        begingetal = int(begingetal / 2)
-        print("Begingetal = ", begingetal)
+    except:
+        print("ërror")
 
-return (begingetal)
-
-except:
-    sys.exit(1)
+def main():
+    berekening(500)
 
 # def collatz(number, round):
 #    if number == 1:
@@ -34,7 +33,6 @@ except:
 #    print("Ronde: {}, oude getal: {}, nieuwe getal: {}".format(round, number, result))
 #    return (result, round+1)
 
-#def main():
 #    getal = 1
 #    start = 1
 
@@ -49,6 +47,3 @@ except:
 
 #    while getal != 1:
 #        (getal, start) = collatz(getal, start)
-
-#    if __name__ == "__main__":
-#        main()
