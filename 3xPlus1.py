@@ -3,15 +3,15 @@ def berekening(begingetal):
     try:
         if (begingetal % 2) > 0:
             begingetal = 3 * begingetal + 1
-            print("Begingetal = ", begingetal)
+            print("ifblok = ", begingetal)
 
         elif begingetal == 1:
             begingetal = begingetal + 1
-            print("Begingetal = ", begingetal)
+            print("elisblok = ", begingetal)
 
         else:
             begingetal = int(begingetal / 2)
-            print("Begingetal = ", begingetal)
+            print("elseblok = ", begingetal)
 
         return (begingetal)
 
@@ -21,10 +21,11 @@ def berekening(begingetal):
 
 def main():
     begingetal = int(input())
-    berekening()
+    berekening(begingetal)
     print("Begingetal = ", begingetal)
 
-
+if __name__ == "__main__":
+    main()
 
 # from sys import exit
 # def collatz(number, round):
