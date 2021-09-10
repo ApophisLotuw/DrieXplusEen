@@ -1,28 +1,32 @@
-# from sys import exit
-
 def berekening(begingetal):
 
     try:
         if (begingetal % 2) > 0:
             begingetal = 3 * begingetal + 1
-#            print("Begingetal = ", begingetal)
+            print("Begingetal = ", begingetal)
 
         elif begingetal == 1:
             begingetal = begingetal + 1
-#            print("Begingetal = ", begingetal)
+            print("Begingetal = ", begingetal)
 
         else:
             begingetal = int(begingetal / 2)
-#            print("Begingetal = ", begingetal)
+            print("Begingetal = ", begingetal)
 
         return (begingetal)
 
     except:
         print("ërror")
 
-def main():
-    berekening(500)
 
+def main():
+    begingetal = int(input())
+    berekening()
+    print("Begingetal = ", begingetal)
+
+
+
+# from sys import exit
 # def collatz(number, round):
 #    if number == 1:
 #        return 1
