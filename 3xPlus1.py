@@ -11,11 +11,11 @@ def main():
         ronde = ronde + 1
         print("Even:", getal, " Ronde: ", ronde)
 
-def even(getal=None):
-    getal = int(getal / 2)
+def even(getal2):
+    getal2 = int(getal2 / 2)
 
-def oneven(getal=None):
-    getal = 3 * getal + 1
+def oneven(getal2):
+    getal2 = 3 * getal2 + 1
 
 if __name__ == "__main__":
     main()
