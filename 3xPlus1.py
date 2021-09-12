@@ -2,19 +2,22 @@ def main():
     getal = int(input())
     ronde = 1
 
-    if (getal == 1):
-        print("Rondes gebruikt: ". ronde)
-        exit()
-    elif (getal % 2) > 0:
-        x = oneven(getal)
-        print("Oneven:", x, " Ronde: ", ronde)
-        ronde = ronde + 1
-        return(x)
+    while (getal > 1):
+        if (getal == 1):
+            print("Rondes gebruikt: ", ronde)
+            exit()
+        elif (getal % 2) > 0:
+            x = oneven(getal)
+            print("Oneven:", x, " Ronde: ", ronde)
+            ronde = ronde + 1
+            getal = x
+        else:
+            x = even(getal)
+            print("Even:", x, " Ronde: ", ronde)
+            ronde = ronde + 1
+            getal = x
     else:
-        x = even(getal)
-        print("Even:", x, " Ronde: ", ronde)
-        ronde = ronde + 1
-        return(x)
+        print(getal)
 
 
 def even(getal2):
