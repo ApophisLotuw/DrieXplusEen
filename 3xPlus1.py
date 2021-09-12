@@ -4,18 +4,20 @@ def main():
 
     if (getal % 2) > 0:
         oneven(getal)
-        ronde = ronde + 1
         print("Oneven:", getal, " Ronde: ", ronde)
+        ronde = ronde + 1
     else:
         even(getal)
-        ronde = ronde + 1
         print("Even:", getal, " Ronde: ", ronde)
+        ronde = ronde + 1
 
 def even(getal2):
     getal2 = int(getal2 / 2)
+    return(getal2)
 
 def oneven(getal2):
     getal2 = 3 * getal2 + 1
+    return(getal2)
 
 if __name__ == "__main__":
     main()
