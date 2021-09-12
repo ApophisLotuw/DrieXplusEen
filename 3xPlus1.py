@@ -6,18 +6,18 @@ def main():
         if (getal == 1):
             print("Rondes gebruikt: ", ronde)
             exit()
-        elif (getal % 2) > 0:
-            x = oneven(getal)
+        elif (int(getal % 2)) > 0:
+            x = int(oneven(getal))
             print("Oneven:", x, " Ronde: ", ronde)
             ronde = ronde + 1
             getal = x
         else:
-            x = even(getal)
+            x = int(even(getal))
             print("Even:", x, " Ronde: ", ronde)
             ronde = ronde + 1
             getal = x
     else:
-        print(getal)
+        print("Klaar")
 
 
 def even(getal2):
