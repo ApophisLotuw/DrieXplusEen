@@ -3,13 +3,15 @@ def main():
     ronde = 1
 
     if (getal % 2) > 0:
-        oneven(5000)
-        print("Oneven:", getal, " Ronde: ", ronde, oneven(5003))
+        oneven(getal)
+        print("Oneven:", getal, " Ronde: ", ronde)
         ronde = ronde + 1
+        return(getal)
     else:
         even(getal)
         print("Even:", getal, " Ronde: ", ronde)
         ronde = ronde + 1
+        return(getal)
 
 def even(getal2):
     getal2 = int(getal2 / 2)
